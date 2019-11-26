@@ -1,6 +1,6 @@
 # ts-vue-scaffold
 
-a typescript-vue-scaffold to start up awesome frontend project
+⚡️a typescript-vue-scaffold 🔧 to start up awesome frontend project
 
 <!-- PROJECT SHIELDS -->
 
