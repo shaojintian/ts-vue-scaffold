@@ -1,6 +1,6 @@
-# ProjectName
+# ts-vue-scaffold
 
-ProjectName and Description
+a typescript-vue-scaffold to start up awesome frontend project
 
 <!-- PROJECT SHIELDS -->
 
@@ -15,22 +15,22 @@ ProjectName and Description
 <br />
 
 <p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
+  <a href="https://github.com/shaojintian/ts-vue-scaffold/">
     <img src="docs/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Best-Frontend-Scaffold</h3>
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome typescript-vue-scaffold to start up awesome frontend project!
     <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/shaojintian/ts-vue-scaffold"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/shaojintian/Best_README_template"> View Demo</a>
+    <a href="https://github.com/shaojintian/ts-vue-scaffold"> View Demo</a>
     ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">Report Bug</a>
+    <a href="https://github.com/shaojintian/ts-vue-scaffold/issues">Report Bug</a>
     ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">Request Feature</a>
+    <a href="https://github.com/shaojintian/ts-vue-scaffold/issues">Request Feature</a>
   </p>
 
 </p>
@@ -39,9 +39,10 @@ ProjectName and Description
 
 ## 特点
 
-1. xxx
-2. xxx
-3. xxx
+1. Vue.js
+2. TypeScript && JavaScript
+3. Webpack
+4. Jest
 
 
 
@@ -65,22 +66,31 @@ ProjectName and Description
 
 ### 上手指南
 
-请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
-
-
+QuickStart
+```bash
+cd ts-vue-scaffold
+npm install
+npm run start
+```
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. npm or cnpm
+2. npm install
 
 ###### **安装步骤**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
 
 ```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+git clone https://github.com/shaojintian/ts-vue-scaffold.git
+```
+
+2. 
+```bash
+cd ts-vue-scaffold
+npm install
 ```
 
 ### 文件目录说明
@@ -89,21 +99,36 @@ eg:
 
 ```
 filetree 
-├── ARCHITECTURE.md
 ├── LICENSE.txt
 ├── README.md
-├── /account/
-├── /bbs/
+├── /build/
+│  ├── .eslintrc.json
+│  ├── webpack.base.config.js
+│  ├── webpack.config.js
+│  ├── webpack.dev.config.js
+│  └── webpack.pro.config.js
 ├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
+│  ├── .DS_Store
+│  ├── /images/
+│  │  ├── logo.png
+│  │  ├── reward_alipay.png
+│  │  └── reward_wechat.png
+│  ├── /tool_recommendations/
+│  │  └── tool_recommendations.md
+├── filetree.txt
+├── jest.config.js
+├── /node_modules/
+├── package.json
+├── /src/
+│  ├── /components/
+│  │  └── hello.vue
+│  ├── index.ts
+│  ├── /tpl/
+│  │  └── index.html
+│  └── vue-shims.d.ts
+├── /test/
+└── tsconfig.json
+
 
 ```
 
@@ -113,7 +138,7 @@ filetree
 
 ### 开发的架构 
 
-请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
+请阅读[ARCHITECTURE.md](https://github.com/shaojintian/ts-vue-scaffold/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
 
 ### 部署
 
@@ -121,7 +146,7 @@ filetree
 
 ### 使用到的框架
 
-- [xxxxxxx](https://getbootstrap.com)
+- [vue.js](https://getbootstrap.com)
 - [xxxxxxx](https://jquery.com)
 - [xxxxxxx](https://laravel.com)
 
@@ -147,15 +172,15 @@ filetree
 
 ### 作者
 
-xxx@xxxx
+sjt@enzo
 
-知乎:xxxx  &ensp; qq:xxxxxx    
+知乎:笃行er  &ensp; qq:1075803623  
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
 ### 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt)
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/ts-vue-scaffold/blob/master/LICENSE.txt)
 
 ### 鸣谢
 
@@ -173,19 +198,18 @@ If you like this project and want to sponsor the author, you can reward the auth
 <img src="docs/images/reward_wechat.png" width="200"/><br>
 
 <img src="docs/images/reward_alipay.png" width="200"/><br>
-
 <!-- links -->
 
-[your-project-path]: shaojintian/Best_README_template
-[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
-[contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
-[forks-url]: https://github.com/shaojintian/Best_README_template/network/members
-[stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square
-[stars-url]: https://github.com/shaojintian/Best_README_template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg
-[license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square
-[license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
+[your-project-path]: shaojintian/ts-vue-scaffold
+[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/ts-vue-scaffold.svg?style=flat-square
+[contributors-url]: https://github.com/shaojintian/ts-vue-scaffold/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shaojintian/ts-vue-scaffold.svg?style=flat-square
+[forks-url]: https://github.com/shaojintian/ts-vue-scaffold/network/members
+[stars-shield]: https://img.shields.io/github/stars/shaojintian/ts-vue-scaffold.svg?style=flat-square
+[stars-url]: https://github.com/shaojintian/ts-vue-scaffold/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shaojintian/ts-vue-scaffold.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/shaojintian/ts-vue-scaffold.svg
+[license-shield]: https://img.shields.io/github/license/shaojintian/ts-vue-scaffold.svg?style=flat-square
+[license-url]: https://github.com/shaojintian/ts-vue-scaffold/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shaojintian
