@@ -1,0 +1,32 @@
+<template>
+    <h1>Hello, {{name}}</h1>
+</template>
+
+
+
+
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+    data (){
+        return{
+            name : 'TypeScript@sjt'
+        }
+    }
+})
+</script>
+
+
+
+
+
+
+
+<style scoped>
+
+h1 {
+    color: red;
+}
+
+</style>
