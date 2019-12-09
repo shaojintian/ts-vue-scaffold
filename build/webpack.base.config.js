@@ -19,14 +19,13 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
-                test: /\.tsx?$/i,
-                use: [{
-                    loader: 'ts-loader',
-                    options: {
-                        transpileOnly:false,
-                        appendTsSuffixTo:[/\.vue$/]
-                    }
-                }],
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader',
+                options: {
+                  getCustomTransformers: () => ({
+                    before: [ tsImportPluginFactory( /** options */) ]
+                  }),
+                },
                 exclude: /node_modules/
             },
             {
